@@ -57,6 +57,7 @@ h3 {
 }
 .ant-btn-primary{
   display: flex;
+  height: auto;
   margin-top: 4px;
   margin-left: 5px;
 }
@@ -72,9 +73,10 @@ h3 {
   background-image: url('e-comm.jpeg');
   position: fixed;
 } */
-.anticon {
+.anticon svg {
   display: flex;
   font-size: 23px;
+  color: cadetblue !important;
   /* color: blueviolet; */
   margin-bottom: 1%;
 }
@@ -209,8 +211,12 @@ h1,h2,h3,h4,h5{
   overflow: hidden;
   padding-left: 1%;
 }
+.ant-btn-round{
+  height: auto !important;
+}
 .ant-btn-round.ant-btn-lg{
   color: white  ;
+  height: auto !important;
   background-color: darkblue;
 }
 .ant-btn-round.ant-btn-lg:hover{
@@ -257,6 +263,34 @@ h1,h2,h3,h4,h5{
 }
 .bg{
   background-color: lightgray;
+}
+.signout{
+  display: flex;
+   /* border: 1px solid red; */
+}
+.button1{
+  background-color: aqua;
+  font-size: 10px;
+  color:blue
+}
+.ant-btn-text{
+  color: white !important;
+  height: auto !important;
+  align-items: center;
+  border-radius: 10% !important;
+  /* border: 1px solid white !important; */
+
+}
+.ant-btn-text:hover {
+  color: white !important;
+  background-color:red !important;
+}
+.ant-btn span{
+  font-size: 25px ;
+}
+.backarrow{
+  display: flex;
+  color: red;
 }
 .App-logo {
   height: 40vmin;

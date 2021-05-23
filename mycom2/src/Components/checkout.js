@@ -87,9 +87,9 @@ export class checkout extends Component {
               <h3>
                 Subtotal ({mycards.length}items) :  {bill} Rupees
               </h3>
-              <Button block>
-                proceed to buy
-              </Button>
+              <Button   shape="round" >
+                  Add To Cart
+                </Button>
             </Card>
           </div>
         </div>

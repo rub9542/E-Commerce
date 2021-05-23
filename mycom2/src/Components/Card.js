@@ -100,7 +100,7 @@ export class Card extends Component {
           <div  className="title">   
           <div className="input">
             <Link to="/homepage">
-              <ArrowLeftOutlined/>
+              <ArrowLeftOutlined className='backarrow'/>
             </Link>
         </div>        
             <h2>
@@ -115,7 +115,7 @@ export class Card extends Component {
               {card.images.map((item,index)=>
                 (
                   <div key={index} className='leftphoto'>
-                    <Popover title={`image${index+1}`} trigger="hover">
+                    <Popover title={`image${index+1}`}  trigger="hover">
                       <p  onClick={()=>this.setIndex(index)}>
                         <img src={item}/>
                       </p>
@@ -150,9 +150,10 @@ export class Card extends Component {
                 <Button   shape="round" icon={<ShoppingCartOutlined/>} onClick={()=> this.select(id)}  size={this.state.size}>
                   Add To Cart
                 </Button>
+                <Link to='/cart/'>
                 <Button  shape="round"  size={this.state.size}>
-                  Buy Now
-                </Button>
+                  Go To Cart
+                </Button></Link>
               </div>
             </div>
           </div>

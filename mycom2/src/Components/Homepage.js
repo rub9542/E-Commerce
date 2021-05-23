@@ -1,10 +1,8 @@
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout, Menu, Breadcrumb, Button, Card, Col, Row, Avatar, Image } from "antd";
 import "../App.css";
 import { Link } from "react-router-dom";
-import { Image } from 'antd';
 import { connect } from "react-redux";
 import { carded, named } from "../actions";
-import { Card, Col, Row, Avatar } from "antd";
 import dp1 from '../dp1.jpg';
 import dp2 from '../dp2.jpg';
 import dp3 from '../dp3.jpg';
@@ -38,30 +36,7 @@ class Homepage extends Component {
       ],
     };
   }
-  // send=()=>{
-  //   this.props.carded({
-  //     name: "Patricia Lebsack",
-  //     username: "Karianne",
-  //     image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png", email: "Julianne.OConner@kory.org",
-  //     address: {
-  //       street: "Hoeger Mall",
-  //       suite: "Apt. 692",
-  //       city: "South Elvis",
-  //       zipcode: "53919-4257",
-  //       geo: {
-  //         lat: "29.4572",
-  //         lng: "-164.2990",
-  //       },
-  //     },
-  //     phone: "493-170-9623 x156",
-  //     website: "kale.biz",
-  //     company: {
-  //       name: "Robel-Corkery",
-  //       catchPhrase: "Multi-tiered zero tolerance productivity",
-  //       bs: "transition cutting-edge web services",
-  //     },
-  //   },)
-  // }
+  
   naming=(value)=>{
     this.props.named(value);
     console.log("value",value);
@@ -81,6 +56,9 @@ class Homepage extends Component {
     // console.log("index", this.state.id);
     return (
       <div className="site-card-border-less-wrapper">
+        <div className='signout'>
+          <Link to='/'>
+        <Button type="text" className='button1'>Logout</Button></Link></div>
         <Row  className="row">
           {redcards.map((item, index) =>
           (
